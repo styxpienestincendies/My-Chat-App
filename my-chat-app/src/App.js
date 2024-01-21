@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 //
 const style = {
@@ -12,7 +13,10 @@ function App() {
     // Creating the base of the chat app
     <div className={style.appContainer}>
       <section className={style.sectionContainer} style={style.backgroundColor}>
+        {/* Navbar */}
+        <Navbar />
 
+        {/* Chat Component */}
       </section>
 
     </div>
