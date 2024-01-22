@@ -7,6 +7,7 @@ const style = {
     wrapper: `flex jusstify-center`
 }
 
+// Conntect the Firebase Authentication and allowing user to sign in with google
 const googleSignIn = () => {
     const provider = new GoogleAuthProvider()
     signInWithRedirect(auth, provider)

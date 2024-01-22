@@ -2,6 +2,7 @@ import React from 'react'
 import SignIn from './SignIn'
 import { auth } from '../firebase'
 import { useAuthState } from 'react-firebase-hooks/auth'
+import LogOut from './LogOut'
 
 
 const style = {
@@ -17,7 +18,9 @@ const Navbar = () => {
     return (
         <div className={style.nav} style={style.backgroundColor}>
             <h1 className={style.heading}> Chat Application</h1>
-            <SignIn />
+
+            {user ? <LogOut /> : <SignIn />} {/* Operator to check if the user is singed in if so only display logout and if not display sign in*/}
+
         </div>
     )
 }
