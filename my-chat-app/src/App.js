@@ -21,9 +21,8 @@ function App() {
       <section className={style.sectionContainer} style={style.backgroundColor}>
         {/* Navbar */}
         <Navbar />
-
         {/* Chat Component */}
-        <Chat />
+        {user ? <Chat /> : null}
       </section>
 
     </div>
